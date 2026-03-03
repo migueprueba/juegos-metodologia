@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound'
 import WaterfallGame from './games/waterfall/WaterfallGame'
 import AgileGame from './games/agile/AgileGame'
 import ScrumGame from './games/scrum/ScrumGame'
+import DevOpsGame from './games/devops/DevOpsGame'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="games/waterfall" element={<WaterfallGame />} />
         <Route path="games/agile" element={<AgileGame />} />
         <Route path="games/scrum" element={<ScrumGame />} />
+        <Route path="games/devops" element={<DevOpsGame />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Route>

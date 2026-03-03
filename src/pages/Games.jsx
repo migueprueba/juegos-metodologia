@@ -28,11 +28,11 @@ const games = [
     },
     {
         id: 4,
-        title: 'Code Review',
-        emoji: '🔍',
-        description: 'Encuentra los bugs escondidos en fragmentos de código.',
+        title: 'DevOps',
+        emoji: '⚡',
+        description: 'Aprendé sobre CI/CD, prácticas DevOps y la cultura de integración continua.',
         color: '#ffb347',
-        route: null,
+        route: '/games/devops',
     },
     {
         id: 5,
