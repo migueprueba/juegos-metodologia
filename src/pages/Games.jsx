@@ -12,11 +12,11 @@ const games = [
     },
     {
         id: 2,
-        title: 'Scrum Sprint',
-        emoji: '🏃',
-        description: 'Simula un sprint ágil y gestiona tu backlog contra el reloj.',
+        title: 'Manifiesto Ágil',
+        emoji: '📜',
+        description: 'Aprendé sobre los valores y principios del desarrollo ágil en 3 niveles interactivos.',
         color: '#00d4aa',
-        route: null,
+        route: '/games/agile',
     },
     {
         id: 3,

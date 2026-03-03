@@ -6,6 +6,7 @@ import Games from './pages/Games'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 import WaterfallGame from './games/waterfall/WaterfallGame'
+import AgileGame from './games/agile/AgileGame'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="games" element={<Games />} />
         <Route path="games/waterfall" element={<WaterfallGame />} />
+        <Route path="games/agile" element={<AgileGame />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Route>
