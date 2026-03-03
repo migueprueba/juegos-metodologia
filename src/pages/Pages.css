@@ -327,6 +327,11 @@
     letter-spacing: 0.08em;
 }
 
+.game-card__tag--play {
+    background: rgba(0, 212, 170, 0.15);
+    color: var(--accent-secondary);
+}
+
 /* ── Contact Form ── */
 .contact-form {
     max-width: 600px;

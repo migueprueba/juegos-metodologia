@@ -5,6 +5,7 @@ import About from './pages/About'
 import Games from './pages/Games'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
+import WaterfallGame from './games/waterfall/WaterfallGame'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="games" element={<Games />} />
+        <Route path="games/waterfall" element={<WaterfallGame />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Route>

@@ -4,10 +4,11 @@ import './Pages.css'
 const games = [
     {
         id: 1,
-        title: 'Trivia Metodológica',
-        emoji: '🧠',
-        description: 'Pon a prueba tus conocimientos sobre metodologías de desarrollo.',
+        title: 'Modelo Cascada',
+        emoji: '🏔️',
+        description: 'Aprendé sobre el proceso de desarrollo en cascada a través de 3 niveles interactivos.',
         color: '#6c63ff',
+        route: '/games/waterfall',
     },
     {
         id: 2,
@@ -15,6 +16,7 @@ const games = [
         emoji: '🏃',
         description: 'Simula un sprint ágil y gestiona tu backlog contra el reloj.',
         color: '#00d4aa',
+        route: null,
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ const games = [
         emoji: '🧩',
         description: 'Arma diagramas UML arrastrando y soltando componentes.',
         color: '#ff6b9d',
+        route: null,
     },
     {
         id: 4,
@@ -29,6 +32,7 @@ const games = [
         emoji: '🔍',
         description: 'Encuentra los bugs escondidos en fragmentos de código.',
         color: '#ffb347',
+        route: null,
     },
     {
         id: 5,
@@ -36,6 +40,7 @@ const games = [
         emoji: '🏗️',
         description: 'Identifica y aplica patrones de diseño en escenarios reales.',
         color: '#87ceeb',
+        route: null,
     },
     {
         id: 6,
@@ -43,6 +48,7 @@ const games = [
         emoji: '🌳',
         description: 'Navega por un repositorio Git resolviendo conflictos de merge.',
         color: '#dda0dd',
+        route: null,
     },
 ]
 
@@ -60,18 +66,39 @@ function Games() {
                 </p>
 
                 <div className="games-grid">
-                    {games.map((game) => (
-                        <div
-                            key={game.id}
-                            className="game-card glass"
-                            style={{ '--card-accent': game.color }}
-                        >
-                            <div className="game-card__emoji">{game.emoji}</div>
-                            <h3 className="game-card__title">{game.title}</h3>
-                            <p className="game-card__desc">{game.description}</p>
-                            <span className="game-card__tag">Próximamente</span>
-                        </div>
-                    ))}
+                    {games.map((game) => {
+                        const CardContent = (
+                            <>
+                                <div className="game-card__emoji">{game.emoji}</div>
+                                <h3 className="game-card__title">{game.title}</h3>
+                                <p className="game-card__desc">{game.description}</p>
+                                {game.route ? (
+                                    <span className="game-card__tag game-card__tag--play">▶ Jugar</span>
+                                ) : (
+                                    <span className="game-card__tag">Próximamente</span>
+                                )}
+                            </>
+                        )
+
+                        return game.route ? (
+                            <Link
+                                key={game.id}
+                                to={game.route}
+                                className="game-card glass"
+                                style={{ '--card-accent': game.color }}
+                            >
+                                {CardContent}
+                            </Link>
+                        ) : (
+                            <div
+                                key={game.id}
+                                className="game-card glass"
+                                style={{ '--card-accent': game.color }}
+                            >
+                                {CardContent}
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </section>
