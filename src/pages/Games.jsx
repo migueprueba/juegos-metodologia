@@ -20,11 +20,11 @@ const games = [
     },
     {
         id: 3,
-        title: 'Puzzle UML',
-        emoji: '🧩',
-        description: 'Arma diagramas UML arrastrando y soltando componentes.',
+        title: 'Scrum',
+        emoji: '🏃',
+        description: 'Aprendé sobre los roles, eventos y artefactos del framework Scrum.',
         color: '#ff6b9d',
-        route: null,
+        route: '/games/scrum',
     },
     {
         id: 4,
