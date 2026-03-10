@@ -77,7 +77,14 @@ const games = [
         emoji: '🧪',
         description: 'Construí software testeable manejando el ciclo Red-Green-Refactor.',
         color: '#ff4b4b',
-        route: '/games/tdd',
+    },
+    {
+        id: 11,
+        title: 'Modelo en Espiral',
+        emoji: '🌀',
+        description: 'Construí prototipos para mitigar riesgos en sistemas complejos.',
+        color: '#fca311',
+        route: '/games/spiral',
     },
 ]
 function Games() {
