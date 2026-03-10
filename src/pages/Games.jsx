@@ -44,11 +44,11 @@ const games = [
     },
     {
         id: 6,
-        title: 'Git Adventure',
-        emoji: '🌳',
-        description: 'Navega por un repositorio Git resolviendo conflictos de merge.',
-        color: '#dda0dd',
-        route: null,
+        title: 'Behavior-Driven Dev',
+        emoji: '🥒',
+        description: 'Aprendé a construir software guiado por el comportamiento y usando Gherkin.',
+        color: '#20c997',
+        route: '/games/bdd',
     },
 ]
 
