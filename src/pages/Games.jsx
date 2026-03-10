@@ -50,8 +50,15 @@ const games = [
         color: '#20c997',
         route: '/games/bdd',
     },
+    {
+        id: 7,
+        title: 'Rational Unified Process',
+        emoji: '🐘',
+        description: 'Explorá las fases temporales y disciplinas del marco RUP.',
+        color: '#ff7eb3',
+        route: '/games/rup',
+    },
 ]
-
 function Games() {
     return (
         <section className="page games">
