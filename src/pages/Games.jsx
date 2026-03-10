@@ -56,6 +56,7 @@ const games = [
         emoji: '🐘',
         description: 'Explorá las fases temporales y disciplinas del marco RUP.',
         color: '#ff7eb3',
+        route: '/games/rup',
     },
     {
         id: 8,
@@ -63,6 +64,7 @@ const games = [
         emoji: '🏎️',
         description: 'Optimizá el flujo de valor y eliminá desperdicios (Muda).',
         color: '#f6d365',
+        route: '/games/lean',
     },
     {
         id: 9,
@@ -70,6 +72,7 @@ const games = [
         emoji: '⚡',
         description: 'Llevá las buenas prácticas de ingeniería al extremo.',
         color: '#00f2fe',
+        route: '/games/xp',
     },
     {
         id: 10,
@@ -77,6 +80,7 @@ const games = [
         emoji: '🧪',
         description: 'Construí software testeable manejando el ciclo Red-Green-Refactor.',
         color: '#ff4b4b',
+        route: '/games/tdd',
     },
     {
         id: 11,
