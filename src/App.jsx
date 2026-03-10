@@ -12,6 +12,7 @@ import DevOpsGame from './games/devops/DevOpsGame'
 import KanbanGame from './games/kanban/KanbanGame'
 import BddGame from './games/bdd/BddGame'
 import RupGame from './games/rup/RupGame'
+import LeanGame from './games/lean/LeanGame'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="games/kanban" element={<KanbanGame />} />
         <Route path="games/bdd" element={<BddGame />} />
         <Route path="games/rup" element={<RupGame />} />
+        <Route path="games/lean" element={<LeanGame />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Route>

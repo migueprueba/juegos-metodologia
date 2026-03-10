@@ -56,7 +56,14 @@ const games = [
         emoji: '🐘',
         description: 'Explorá las fases temporales y disciplinas del marco RUP.',
         color: '#ff7eb3',
-        route: '/games/rup',
+    },
+    {
+        id: 8,
+        title: 'Lean Software Dev',
+        emoji: '🏎️',
+        description: 'Optimizá el flujo de valor y eliminá desperdicios (Muda).',
+        color: '#f6d365',
+        route: '/games/lean',
     },
 ]
 function Games() {
