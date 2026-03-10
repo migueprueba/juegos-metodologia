@@ -36,11 +36,11 @@ const games = [
     },
     {
         id: 5,
-        title: 'Design Patterns',
-        emoji: '🏗️',
-        description: 'Identifica y aplica patrones de diseño en escenarios reales.',
-        color: '#87ceeb',
-        route: null,
+        title: 'Kanban',
+        emoji: '📋',
+        description: 'Aprendé a visualizar y gestionar el flujo de trabajo y los límites WIP.',
+        color: '#4facfe',
+        route: '/games/kanban',
     },
     {
         id: 6,
