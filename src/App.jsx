@@ -14,6 +14,7 @@ import BddGame from './games/bdd/BddGame'
 import RupGame from './games/rup/RupGame'
 import LeanGame from './games/lean/LeanGame'
 import XpGame from './games/xp/XpGame'
+import TddGame from './games/tdd/TddGame'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="games/rup" element={<RupGame />} />
         <Route path="games/lean" element={<LeanGame />} />
         <Route path="games/xp" element={<XpGame />} />
+        <Route path="games/tdd" element={<TddGame />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Route>

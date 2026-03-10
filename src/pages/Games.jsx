@@ -70,7 +70,14 @@ const games = [
         emoji: '⚡',
         description: 'Llevá las buenas prácticas de ingeniería al extremo.',
         color: '#00f2fe',
-        route: '/games/xp',
+    },
+    {
+        id: 10,
+        title: 'Test-Driven Development',
+        emoji: '🧪',
+        description: 'Construí software testeable manejando el ciclo Red-Green-Refactor.',
+        color: '#ff4b4b',
+        route: '/games/tdd',
     },
 ]
 function Games() {
