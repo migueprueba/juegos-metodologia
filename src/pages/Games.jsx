@@ -63,7 +63,14 @@ const games = [
         emoji: '🏎️',
         description: 'Optimizá el flujo de valor y eliminá desperdicios (Muda).',
         color: '#f6d365',
-        route: '/games/lean',
+    },
+    {
+        id: 9,
+        title: 'Extreme Programming',
+        emoji: '⚡',
+        description: 'Llevá las buenas prácticas de ingeniería al extremo.',
+        color: '#00f2fe',
+        route: '/games/xp',
     },
 ]
 function Games() {
